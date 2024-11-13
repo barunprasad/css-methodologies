@@ -2,7 +2,6 @@
   "name": "@css-methodologies/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
   "dependencies": {
     "next": "14.2.16",
@@ -43,5 +42,6 @@
     "tslib": "^2.3.0",
     "typescript": "~5.5.2",
     "typescript-eslint": "^8.0.0"
-  }
+  },
+  "packageManager": "yarn@4.5.1"
 }

@@ -17,6 +17,20 @@ node_modules
 .settings/
 *.sublime-workspace
 
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+.yarn/unplugged/
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
