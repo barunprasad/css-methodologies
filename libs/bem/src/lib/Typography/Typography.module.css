@@ -1,0 +1,12 @@
+.typography {
+  font-family: Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+.typography--heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.typography--body {
+  font-size: 1rem;
+  color: #333;
+}

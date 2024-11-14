@@ -1,4 +1,5 @@
 import './global.css';
+import '@css-methodologies/colors';
 
 export const metadata = {
   title: 'Welcome to showcase',

@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@css-methodologies/bem": ["libs/bem/src/index.ts"],
+      "@css-methodologies/shared": ["libs/shared/src/index.ts"],
+      "@css-methodologies/colors": ["libs/shared/src/lib/global-colors.css"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
