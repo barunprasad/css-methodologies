@@ -1,0 +1,23 @@
+/* Typography structure styles */
+.typography {
+  margin-bottom: 1rem;
+}
+
+/* Typography skin styles */
+.typography-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+.typography-subheading {
+  font-size: 18px;
+  font-weight: semi-bold;
+  color: var(--color-secondary);
+}
+
+.typography-body {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--color-dark);
+}

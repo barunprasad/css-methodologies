@@ -68,9 +68,15 @@ export enum ModuleComponentNames {
   chip = 'chip',
 }
 
-export type ModuleComponentConfig = {
-  [key in ModuleComponentNames]: CodeConfigType;
-};
+export enum ModuleAtomicComponentNames {
+  atoms = 'atoms',
+  molecules = 'molecules',
+  organisms = 'organisms',
+}
+
+export type ModuleComponentConfig =
+  | { [key in ModuleComponentNames]: CodeConfigType }
+  | { [key in ModuleAtomicComponentNames]: CodeConfigType };
 
 export enum ApproachNames {
   bem = 'bem',

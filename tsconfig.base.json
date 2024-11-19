@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@css-methodologies/atomic-design": ["libs/atomic-design/src/index.ts"],
       "@css-methodologies/bem": ["libs/bem/src/index.ts"],
       "@css-methodologies/colors": ["libs/shared/src/lib/global-colors.css"],
       "@css-methodologies/oocss": ["libs/oocss/src/index.ts"],
