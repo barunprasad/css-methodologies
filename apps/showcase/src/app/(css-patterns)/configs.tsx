@@ -7,6 +7,8 @@ import {
 
 import * as BEM_Components from '@css-methodologies/bem';
 import * as OOCSS_Components from '@css-methodologies/oocss';
+import * as SMACSS_Components from '@css-methodologies/smacss';
+
 import {
   ComponentSizeValues,
   ComponentVariantValues,
@@ -120,6 +122,13 @@ export const OocssConfigs: ModuleComponentConfig = {
   chip: getComponentConfig(OOCSS_Components.ChipComponent, chipProps),
 };
 
+export const SmacssConfigs: ModuleComponentConfig = {
+  alert: getComponentConfig(SMACSS_Components.AlertComponent, alertProps),
+  avatar: getComponentConfig(SMACSS_Components.AvatarComponent, avatarProps),
+  button: getComponentConfig(SMACSS_Components.ButtonComponent, buttonProps),
+  chip: getComponentConfig(SMACSS_Components.ChipComponent, chipProps),
+};
+
 type CSS_Approach_ConfigsType = {
   [key in ApproachNames]: ModuleComponentConfig;
 };
@@ -127,7 +136,7 @@ type CSS_Approach_ConfigsType = {
 export const CSS_Approach_Configs: CSS_Approach_ConfigsType = {
   bem: BemConfigs,
   oocss: OocssConfigs,
-  smacs: BemConfigs,
+  smacss: SmacssConfigs,
   itcss: BemConfigs,
   'atomic-design': BemConfigs,
 };

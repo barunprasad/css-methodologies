@@ -1,22 +1,23 @@
 export const JSX_Src = `
 import { PropsWithChildren } from 'react';
-import styles from './Alert.module.css';
+import styles from 'libs/smacss/src/lib/modules/alert.module.css';
+import { ComponentVariants } from '@css-methodologies/shared';
 
 type Props = {
-  type?: 'primary' | 'success' | 'info' | 'warning' | 'error';
+  type?: ComponentVariants;
 };
 
 export const Alert = ({
   type = 'error',
   children,
 }: PropsWithChildren<Props>) => (
-  <div className={\`\${styles.alert} \${styles[\`alert--\${type}\`]}\`}>
-    {children}
-  </div>
+  <div className={\`\${styles.alert} \${styles[type]}\`}>{children}</div>
 );
 
 `;
 export const CSS_Src = `
+/* libs/smacss/src/lib/modules/alert.module.css */
+
 .alert {
   padding: 12px 16px;
   background-color: var(--color-bg-light-error);
@@ -26,39 +27,40 @@ export const CSS_Src = `
   font-size: 14px;
 }
 
-.alert--primary {
+.primary {
   background-color: var(--color-bg-light-primary);
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
-.alert--secondary {
+.secondary {
   background-color: var(--color-bg-light-secondary);
   color: var(--color-secondary);
   border-color: var(--color-secondary);
 }
 
-.alert--success {
+.success {
   background-color: var(--color-bg-light-success);
   color: var(--color-success);
   border-color: var(--color-success);
 }
 
-.alert--info {
+.info {
   background-color: var(--color-bg-light-info);
   color: var(--color-info);
   border-color: var(--color-info);
 }
 
-.alert--warning {
+.warning {
   background-color: var(--color-bg-light-warning);
   color: var(--color-warning);
   border-color: var(--color-warning);
 }
 
-.alert--error {
+.error {
   background-color: var(--color-bg-light-error);
   color: var(--color-error);
   border-color: var(--color-error);
 }
+
 `;

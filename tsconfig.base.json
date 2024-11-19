@@ -18,7 +18,8 @@
       "@css-methodologies/bem": ["libs/bem/src/index.ts"],
       "@css-methodologies/colors": ["libs/shared/src/lib/global-colors.css"],
       "@css-methodologies/oocss": ["libs/oocss/src/index.ts"],
-      "@css-methodologies/shared": ["libs/shared/src/index.ts"]
+      "@css-methodologies/shared": ["libs/shared/src/index.ts"],
+      "@css-methodologies/smacss": ["libs/smacss/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

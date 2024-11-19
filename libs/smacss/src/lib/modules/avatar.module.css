@@ -1,0 +1,40 @@
+/* Module styles for Avatar */
+.avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  line-height: 40px;
+}
+
+.primary {
+  background-color: var(--color-bg-light-primary);
+  color: var(--color-primary);
+}
+
+.secondary {
+  background-color: var(--color-bg-light-secondary);
+  color: var(--color-secondary);
+}
+
+.success {
+  background-color: var(--color-bg-light-success);
+  color: var(--color-success);
+}
+
+.info {
+  background-color: var(--color-bg-light-info);
+  color: var(--color-info);
+}
+
+.warning {
+  background-color: var(--color-bg-light-warning);
+  color: var(--color-warning);
+}
+
+.error {
+  background-color: var(--color-bg-light-error);
+  color: var(--color-error);
+}

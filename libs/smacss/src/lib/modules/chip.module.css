@@ -1,0 +1,39 @@
+/* Module styles for Chip */
+.chip {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.primary {
+  background-color: var(--color-bg-light-primary);
+  color: var(--color-primary);
+}
+
+.secondary {
+  background-color: var(--color-bg-light-secondary);
+  color: var(--color-secondary);
+}
+
+.success {
+  background-color: var(--color-bg-light-success);
+  color: var(--color-success);
+}
+
+.info {
+  background-color: var(--color-bg-light-info);
+  color: var(--color-info);
+}
+
+.warning {
+  background-color: var(--color-bg-light-warning);
+  color: var(--color-warning);
+}
+
+.error {
+  background-color: var(--color-bg-light-error);
+  color: var(--color-error);
+}

@@ -75,7 +75,7 @@ export type ModuleComponentConfig = {
 export enum ApproachNames {
   bem = 'bem',
   oocss = 'oocss',
-  smacs = 'smacs',
+  smacss = 'smacss',
   'atomic-design' = 'atomic-design',
   itcss = 'itcss',
 }
@@ -85,7 +85,7 @@ export type ExplainationType = { [key in ApproachNames]: string };
 export const ApproachNameDescriptions: ExplainationType = {
   [ApproachNames.bem]: 'Block-Element-Modifier',
   [ApproachNames.oocss]: 'Object-Oriented CSS',
-  [ApproachNames.smacs]: 'Scalable and Modular Architecture for CSS',
+  [ApproachNames.smacss]: 'Scalable and Modular Architecture for CSS',
   [ApproachNames['atomic-design']]: '',
   [ApproachNames.itcss]: 'Inverted Triangle CSS',
 };

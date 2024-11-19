@@ -1,0 +1,15 @@
+/* Reset and global base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

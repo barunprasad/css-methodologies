@@ -59,7 +59,7 @@ Principles of OOCSS:
 1. **Separate Structure and Skin**: Create structure classes that define the layout and skin classes for appearance, making them reusable across different contexts.
 
 2. **Separate Container and Content**: Keep container-specific styles separate so components can be placed anywhere without affecting the layout.`,
-  smacs: `**Overview**: SMACSS, created by Jonathan Snook, is a flexible CSS architecture that categorizes styles into five types. Unlike rigid naming conventions, SMACSS is more of a guide for organizing CSS and is especially useful for large-scale applications.
+  smacss: `**Overview**: SMACSS, created by Jonathan Snook, is a flexible CSS architecture that categorizes styles into five types. Unlike rigid naming conventions, SMACSS is more of a guide for organizing CSS and is especially useful for large-scale applications.
 
 **Categories in SMACSS:**
 

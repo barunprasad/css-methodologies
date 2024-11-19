@@ -1,0 +1,21 @@
+/* Module styles for Typography */
+.typography {
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+.subheading {
+  font-size: 18px;
+  font-weight: semi-bold;
+  color: var(--color-secondary);
+}
+
+.body {
+  font-size: 14px;
+  color: var(--color-dark);
+}
