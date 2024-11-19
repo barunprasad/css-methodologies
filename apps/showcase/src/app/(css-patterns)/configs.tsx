@@ -6,6 +6,7 @@ import {
 } from 'apps/showcase/src/types';
 
 import * as BEM_Components from '@css-methodologies/bem';
+import * as OOCSS_Components from '@css-methodologies/oocss';
 import {
   ComponentSizeValues,
   ComponentVariantValues,
@@ -42,67 +43,81 @@ function getComponentConfig(
   return codeConfig;
 }
 
-export const BemConfigs: ModuleComponentConfig = {
-  alert: getComponentConfig(BEM_Components.AlertComponent, [
-    {
-      name: 'type',
-      type: 'radio',
-      values: ComponentVariantValues,
-      defaultValue: 'primary',
-    },
-    {
-      name: 'children',
-      type: 'text',
-      defaultValue: 'This is the content of Alert',
-    },
-  ]),
-  avatar: getComponentConfig(BEM_Components.AvatarComponent, [
-    {
-      name: 'size',
-      type: 'segment',
-      values: ComponentSizeValues,
-      defaultValue: 'medium',
-    },
-    {
-      name: 'src',
-      type: 'text',
-      values: ComponentVariantValues,
-      defaultValue: '/logo-c.png',
-    },
-    {
-      name: 'alt',
-      type: 'text',
-      defaultValue: 'image alternate text',
-    },
-  ]),
-  button: getComponentConfig(BEM_Components.ButtonComponent, [
-    {
-      name: 'variant',
-      type: 'radio',
-      values: ComponentVariantValues,
-      defaultValue: 'primary',
-    },
-    {
-      name: 'children',
-      type: 'text',
-      defaultValue: 'Click here',
-    },
-  ]),
+const alertProps: ComponentPropDefs[] = [
+  {
+    name: 'type',
+    type: 'radio',
+    values: ComponentVariantValues,
+    defaultValue: 'primary',
+  },
+  {
+    name: 'children',
+    type: 'text',
+    defaultValue: 'This is the content of Alert',
+  },
+];
 
-  chip: getComponentConfig(BEM_Components.ChipComponent, [
-    {
-      name: 'variant',
-      type: 'radio',
-      values: ComponentVariantValues,
-      defaultValue: 'primary',
-    },
-    {
-      name: 'children',
-      type: 'text',
-      values: ComponentVariantValues,
-      defaultValue: 'success',
-    },
-  ]),
+const avatarProps: ComponentPropDefs[] = [
+  {
+    name: 'size',
+    type: 'segment',
+    values: ComponentSizeValues,
+    defaultValue: 'medium',
+  },
+  {
+    name: 'src',
+    type: 'text',
+    values: ComponentVariantValues,
+    defaultValue: '/logo-c.png',
+  },
+  {
+    name: 'alt',
+    type: 'text',
+    defaultValue: 'image alternate text',
+  },
+];
+
+const buttonProps: ComponentPropDefs[] = [
+  {
+    name: 'variant',
+    type: 'radio',
+    values: ComponentVariantValues,
+    defaultValue: 'primary',
+  },
+  {
+    name: 'children',
+    type: 'text',
+    defaultValue: 'Click here',
+  },
+];
+
+const chipProps: ComponentPropDefs[] = [
+  {
+    name: 'variant',
+    type: 'radio',
+    values: ComponentVariantValues,
+    defaultValue: 'primary',
+  },
+  {
+    name: 'children',
+    type: 'text',
+    values: ComponentVariantValues,
+    defaultValue: 'success',
+  },
+];
+
+export const BemConfigs: ModuleComponentConfig = {
+  alert: getComponentConfig(BEM_Components.AlertComponent, alertProps),
+  avatar: getComponentConfig(BEM_Components.AvatarComponent, avatarProps),
+  button: getComponentConfig(BEM_Components.ButtonComponent, buttonProps),
+  chip: getComponentConfig(BEM_Components.ChipComponent, chipProps),
+};
+
+export const OocssConfigs: ModuleComponentConfig = {
+  alert: getComponentConfig(OOCSS_Components.AlertComponent, alertProps),
+  avatar: getComponentConfig(OOCSS_Components.AvatarComponent, avatarProps),
+  button: getComponentConfig(OOCSS_Components.ButtonComponent, buttonProps),
+  chip: getComponentConfig(OOCSS_Components.ChipComponent, chipProps),
 };
 
 type CSS_Approach_ConfigsType = {
@@ -111,7 +126,7 @@ type CSS_Approach_ConfigsType = {
 
 export const CSS_Approach_Configs: CSS_Approach_ConfigsType = {
   bem: BemConfigs,
-  oocss: BemConfigs,
+  oocss: OocssConfigs,
   smacs: BemConfigs,
   itcss: BemConfigs,
   'atomic-design': BemConfigs,

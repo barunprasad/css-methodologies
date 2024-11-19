@@ -28,7 +28,10 @@ export const CSS_Src = `
 }
 
 .chip--primary,
-.chip--secondary {
+.chip--secondary,
+.chip--info,
+.chip--warning,
+.chip--error {
   color: #fff;
 }
 
@@ -38,5 +41,17 @@ export const CSS_Src = `
 
 .chip--secondary {
   background-color: var(--color-secondary);
+}
+
+.chip--info {
+  background-color: var(--color-info);
+}
+
+.chip--warning {
+  background-color: var(--color-warning);
+}
+
+.chip--error {
+  background-color: var(--color-error);
 }
 `;

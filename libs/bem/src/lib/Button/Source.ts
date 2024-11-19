@@ -1,4 +1,4 @@
-export const Button_JSX_Src = `
+export const JSX_Src = `
 import { PropsWithChildren } from 'react';
 import styles from './Button.module.css';
 
@@ -15,7 +15,8 @@ export const Button = ({
   </button>
 );
 `;
-export const Button_CSS_Src = `.button {
+export const CSS_Src = `
+.button {
   background-color: var(--color-primary);
   color: var(--color-light);
   padding: 8px 16px;
@@ -27,5 +28,17 @@ export const Button_CSS_Src = `.button {
 
 .button--secondary {
   background-color: var(--color-secondary);
+}
+
+.button--info {
+  background-color: var(--color-info);
+}
+
+.button--warning {
+  background-color: var(--color-warning);
+}
+
+.button--error {
+  background-color: var(--color-error);
 }
 `;
