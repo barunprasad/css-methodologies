@@ -1,8 +1,9 @@
 import { PropsWithChildren } from 'react';
 import styles from './Chip.module.css';
+import { ComponentVariants } from '@css-methodologies/shared';
 
 type Props = {
-  variant?: 'primary' | 'secondary';
+  variant?: ComponentVariants;
 };
 
 export const Chip = ({

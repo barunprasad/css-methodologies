@@ -1,5 +1,5 @@
 .typography {
-  font-family: Arial, sans-serif;
+  font-family: inherit;
   margin-bottom: 1rem;
 }
 .typography--heading {
@@ -8,5 +8,5 @@
 }
 .typography--body {
   font-size: 1rem;
-  color: #333;
+  color: var(--colors-dark);
 }

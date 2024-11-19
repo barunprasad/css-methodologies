@@ -1,0 +1,31 @@
+.sidebarContainer {
+  min-width: 220px;
+  border-right: 0.5px solid #ccc;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 0;
+  padding-right: 12px;
+  overflow-y: auto;
+}
+
+.sidebarItem {
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 6px;
+  width: 100%;
+  color: var(--color-dark);
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.sidebarItem.active {
+  background-color: var(--color-bg-light-primary);
+  color: var(--color-primary);
+}
+
+.sidebarItem:hover {
+  background-color: var(--color-bg-light-primary);
+  color: var(--color-primary);
+}

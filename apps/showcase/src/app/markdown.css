@@ -1,0 +1,124 @@
+/* Markdown Container */
+
+/* Paragraphs */
+.markdown p {
+  margin: 1em 0;
+}
+
+/* Inline Code */
+.markdown code {
+  background-color: #1e1e1e; /* Match VS Code's editor background */
+  color: #dcdcaa; /* Yellow-gold for inline code */
+  padding: 2px 4px;
+  border: 1px solid #333; /* Slight border for emphasis */
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Code Block */
+.markdown pre {
+  background: #1e1e1e; /* VS Code's editor background */
+  color: #d4d4d4; /* Default VS Code text color */
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto; /* Allow horizontal scrolling for long lines */
+  margin: 1em 0;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for elevation */
+}
+
+.markdown pre code {
+  background: transparent; /* Match the pre background */
+  color: inherit;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: inherit;
+  padding: 0;
+}
+
+/* Syntax Highlighting Inspired by VS Code Dark Theme */
+.markdown .token.comment,
+.markdown .token.prolog,
+.markdown .token.doctype,
+.markdown .token.cdata {
+  color: #6a9955; /* Green for comments */
+}
+
+.markdown .token.punctuation {
+  color: #d4d4d4; /* Default text color */
+}
+
+.markdown .token.property,
+.markdown .token.tag,
+.markdown .token.constant,
+.markdown .token.symbol,
+.markdown .token.deleted {
+  color: #569cd6; /* Blue for properties and tags */
+}
+
+.markdown .token.boolean,
+.markdown .token.number {
+  color: #b5cea8; /* Light green for booleans and numbers */
+}
+
+.markdown .token.selector,
+.markdown .token.attr-name,
+.markdown .token.string,
+.markdown .token.char,
+.markdown .token.builtin,
+.markdown .token.inserted {
+  color: #ce9178; /* Orange for strings and attributes */
+}
+
+.markdown .token.operator,
+.markdown .token.entity,
+.markdown .token.url {
+  color: #d7ba7d; /* Yellow-brown for operators and URLs */
+}
+
+.markdown .token.keyword {
+  color: #c586c0; /* Pinkish-purple for keywords */
+}
+
+.markdown .token.function,
+.markdown .token.class-name {
+  color: #4ec9b0; /* Aqua for functions and class names */
+}
+
+.markdown .token.regex,
+.markdown .token.important,
+.markdown .token.variable {
+  color: #d7ba7d; /* Yellow-brown for regex and variables */
+}
+
+.markdown .token.important,
+.markdown .token.bold {
+  font-weight: bold;
+}
+
+.markdown .token.italic {
+  font-style: italic;
+}
+
+/* Lists */
+.markdown ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  /* color: #d4d4d4; */
+}
+
+.markdown ol {
+  /* list-style-type: decimal; */
+  margin-left: 20px;
+  /* color: #d4d4d4; */
+}
+
+/* Blockquote */
+.markdown blockquote {
+  border-left: 4px solid #569cd6; /* Blue left border */
+  padding-left: 16px;
+  margin: 1em 0;
+
+  font-style: italic;
+  background: #252526; /* Slightly lighter than main background */
+  border-radius: 4px;
+}

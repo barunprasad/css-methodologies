@@ -1,0 +1,44 @@
+.navigateTo {
+  background-color: var(--snow-colors-primary-900);
+  color: var(--snow-colors-grey-50);
+  padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 6px 0px;
+  outline-offset: 4px;
+  outline-width: 1px;
+  outline-color: var(--snow-colors-neutral-1000);
+}
+
+.navigateTo:hover {
+  color: var(--snow-colors-neutral-0);
+}
+
+.navigateTo svg {
+  width: 14px;
+  color: inherit;
+}
+
+.navigateTo:hover svg {
+  /* transform: translateX(4px) scale(1.5); */
+  stroke-width: 2px;
+  color: inherit;
+}
+
+.navigateTo--text {
+  background-color: transparent;
+  color: var(--snow-colors-primary-600);
+  font-weight: 500;
+  font-size: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navigateTo--text:hover {
+  color: var(--snow-colors-primary-900);
+}

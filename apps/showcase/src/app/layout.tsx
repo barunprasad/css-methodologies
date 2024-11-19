@@ -1,5 +1,16 @@
 import './global.css';
+import './markdown.css';
+import { Inter } from 'next/font/google';
+import '@pigment-css/react/styles.css';
+import '@arctic-kit/snow/style.css';
 import '@css-methodologies/colors';
+import { Header, RootContent } from '../ui/components';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '900'],
+});
 
 export const metadata = {
   title: 'Welcome to showcase',
@@ -12,8 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="theme-light">
+      <body className={`${inter.className} antialiased`}>
+        <Header />
+        <RootContent>{children}</RootContent>
+      </body>
     </html>
   );
 }

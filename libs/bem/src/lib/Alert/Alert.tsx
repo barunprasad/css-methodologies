@@ -1,8 +1,9 @@
 import { PropsWithChildren } from 'react';
 import styles from './Alert.module.css';
+import { ComponentVariants } from '@css-methodologies/shared';
 
 type Props = {
-  type?: 'error' | 'success';
+  type?: ComponentVariants;
 };
 
 export const Alert = ({

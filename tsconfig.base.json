@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@css-methodologies/bem": ["libs/bem/src/index.ts"],
+      "@css-methodologies/bem/raw/*": ["libs/bem/src/*"],
       "@css-methodologies/shared": ["libs/shared/src/index.ts"],
       "@css-methodologies/colors": ["libs/shared/src/lib/global-colors.css"]
     }

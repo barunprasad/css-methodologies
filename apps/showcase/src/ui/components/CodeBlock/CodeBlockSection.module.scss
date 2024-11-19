@@ -1,0 +1,54 @@
+.codeBlock {
+  background-color: var(--snow-colors-neutral-0);
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-between;
+  button {
+    opacity: 0;
+    position: relative;
+    margin-right: 16px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+
+  .container {
+    padding: 1rem;
+    background-color: var(--snow-colors-neutral-0);
+    overflow-x: auto;
+    flex: 1;
+  }
+
+  &:hover {
+    button {
+      opacity: 1;
+      border: 1px solid var(--snow-colors-grey-200);
+    }
+  }
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  overflow-y: auto;
+  border: 1px solid var(--snow-colors-grey-200);
+  border-radius: 4px;
+
+  &.visible {
+    max-height: 500px;
+  }
+}
+
+.lineNumber {
+  display: inline-block;
+  counter-increment: line;
+  width: 16px;
+  font-size: 13px;
+  // color: var(--ds-gray-600);
+  // font-family: var(--font-mono);
+  font-family: 'Fira Code', monospace;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  text-align: right;
+  flex-shrink: 0;
+  margin-right: 20px;
+  z-index: 1;
+  content: counter(token-line);
+}

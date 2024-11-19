@@ -11,3 +11,15 @@
 .button--secondary {
   background-color: var(--color-secondary);
 }
+
+.button--info {
+  background-color: var(--color-info);
+}
+
+.button--warning {
+  background-color: var(--color-warning);
+}
+
+.button--error {
+  background-color: var(--color-error);
+}

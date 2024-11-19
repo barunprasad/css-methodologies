@@ -1,8 +1,9 @@
 import { PropsWithChildren } from 'react';
 import styles from './Button.module.css';
+import { ComponentVariants } from '@css-methodologies/shared';
 
 type Props = {
-  variant?: 'primary' | 'secondary';
+  variant?: ComponentVariants;
 };
 
 export const Button = ({
